@@ -1,8 +1,102 @@
 body {
   padding: 50px;
-  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #b3def0;
+  background-image: url("/images/background.jpg");
+  background-size: 100vw 120vh;
 }
 
 a {
-  color: #00b7ff;
+  color: #030011;
+}
+
+/* Navbar style */
+
+nav {
+  background-color: #938797;
+  padding: 15px;
+}
+
+nav ul {
+  /* Display items in a line */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+nav ul li {
+  /* Remove the list styling */
+  list-style-type: none;
+}
+
+nav ul li a {
+  /* Remove the underlining of anchors */
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+#welcome-home > p {
+  font-size: 17px;
+}
+
+/* NEW SHOW FORM */
+
+form {
+  margin: 20px;
+}
+
+form > label {
+  color: white;
+  font-size: 18px;
+}
+
+input {
+  display: block;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  padding: 10px;
+  width: 20%;
+  margin: 10px 0 30px 0;
+  background-color: #dfdfdf;
+  color: rgb(0, 0, 0);
+}
+
+input:focus {
+  background-color: #303030;
+  color: white;
+}
+
+button[type="submit"],
+a.action-btn {
+  background-color: #4b00adc0;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 25px;
+}
+
+div.action-btns {
+  display: flex;
+  flex-direction: row;
+  flex-direction: start;
+}
+
+a.action-btn {
+  text-decoration: none;
+  width: 100px;
+  height: 37px;
+  margin-top: 20px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+button[type="submit"] {
+  padding: 12px 20px;
+}
+
+#drone-card > p {
+  color: white;
+  font-size: 1rem;
 }
